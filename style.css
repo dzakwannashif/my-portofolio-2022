@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-p{
+    font-family: 'poppins';
+}
+
+.text-q{
+    font-family: 'quicksand';
+}
+
+.text-n{
+    font-family: 'nunito';
+}
+
+.text-black{
+    color: #000;
+}
+
+.text-title-p{
+    font-family: 'poppins'; 
+    font-weight: 700 !important;
+}
+
+.text-title-q{
+    font-family: 'quicksand'; 
+    font-weight: 700 !important;
+}
+
+.text-title-n{
+    font-family: 'nunito'; 
+    font-weight: 700 !important;
+}
+
+.text-medium{
+    font-size: 18px !important;
+}
+
+.nav_li:hover{
+    color: #0DCAF0;
+    transition: 0.5s;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.text-home{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.name{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.pp-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-home{
+    border-radius: 15px;
+}
+
+.btn-home:hover{
+    transition: .5s;
+}
+
+.scroll-down{
+    height: 20vh;
+}
+
+.arrow-down{
+    color: #0DCAF0;
+    animation: dropdown 0.5s infinite alternate;
+}
+
+@keyframes dropdown {
+    from{
+        transform: translate(0, 1px);
+    }
+
+    to{
+        transform: translate(0, -20px);
+    }
+}
+
+.bg-about{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://images.unsplash.com/photo-1600846309541-420e33acda4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');
+}
+
+.bg-about-2{
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+.about{
+    width: 100%;
+    height: 80vh;
+}
+
+.about img{
+    height: 300px;
+}
+
+.dzakwan{
+    text-shadow: 1px 2px 0 #0DCAF0;
+}
+
+.footer-about{
+    font-size: 12px;
+    text-align: end;
+}
+
+.skill-card{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-kotlin-bg{
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/kotlin.png);
+}
+
+.p-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.p-icon i{
+    font-size: 2rem;
+}
+
+.text-skill{
+    font-size: 12px;
+    text-align: center;
+}
+
+.progress-android{
+    width: 75%;
+}
+
+.progress-skill{
+    width: 100%;
+    z-index: 1;
+}
