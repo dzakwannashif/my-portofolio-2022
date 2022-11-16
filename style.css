@@ -26,8 +26,20 @@ a{
     font-family: 'nunito';
 }
 
+.text-small{
+    font-size: 12px;
+}
+
 .text-black{
     color: #000;
+}
+
+.text-title{
+    font-weight: 700;
+}
+
+.font-medium{
+    font-weight: 600;
 }
 
 .text-title-p{
@@ -46,6 +58,7 @@ a{
 }
 
 .text-medium{
+    font-weight: 600 !important;
     font-size: 18px !important;
 }
 
@@ -130,27 +143,45 @@ a{
     text-shadow: 1px 2px 0 #0DCAF0;
 }
 
+
 .footer-about{
     font-size: 12px;
     text-align: end;
 }
 
-.skill-card{
-    display: flex;
+.card-size{
+    height: 300px;
     width: 200px;
-    height: 200px;
-    margin: 50px;
-    justify-content: center;
-    align-items: center;
 }
 
-.skill-kotlin-bg{
-    height: 100px;
-    width: 100px;
-    background-size: cover;
-    background-position: center;
-    background-image: url(img/kotlin.png);
+.card-front, 
+.card-back{
+    height: 300px;
+    width: 200px;
 }
+
+.card-flip div{
+    backface-visibility: hidden;
+    transition: transform 2000ms;
+    position: absolute;
+}
+
+.card-front{
+    transform: rotateY(0deg);
+}
+
+.card-back{
+    transform: rotateY(180deg);
+}
+
+.card-size:hover .card-front{
+    transform: rotateY(-180deg);
+}
+
+.card-size:hover .card-back{
+    transform: rotateY(0deg);
+}
+
 
 .p-icon{
     display: flex;
@@ -162,19 +193,10 @@ a{
 }
 
 .p-icon i{
-    font-size: 2rem;
+    font-size: 3em;
 }
 
 .text-skill{
     font-size: 12px;
     text-align: center;
-}
-
-.progress-android{
-    width: 75%;
-}
-
-.progress-skill{
-    width: 100%;
-    z-index: 1;
 }
