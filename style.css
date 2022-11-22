@@ -71,7 +71,11 @@ a{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
+}
+
+.home-img{
+    width: 100%;
 }
 
 .text-home{
@@ -88,10 +92,6 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.btn-home{
-    border-radius: 15px;
 }
 
 .btn-home:hover{
@@ -218,6 +218,8 @@ a{
     width: 100%;
 }
 
+
+
 .project-card{
     width: 100%;
 }
@@ -234,4 +236,116 @@ a{
 
 .footer{
     background-color: #0099ff;
+}
+
+.footer li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.icon-footer a{
+    color: white;
+    font-size: 2em;
+}
+
+@media screen and (max-width:991px) {
+    .project-title .p1{
+        font-size: 64px !important;
+    }
+
+    .project-title{
+        padding: 5px !important;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .carousel-desc h5{
+        font-size: 18px;
+    }
+
+    .carousel-desc p{
+        font-size: 14px;
+    }
+    
+    .carousel-desc a{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .icon-footer a{
+        font-size: 1.5em;
+        margin: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .about img{
+        width: 250px;
+        height: auto;
+    }
+
+    .about-desc h4{
+        font-size: 20px;
+    }
+
+    
+    .about-desc p {
+        font-size: 16px;
+    }
+    
+    .about-desc .footer-about{
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    
+    .home-1{
+        margin-top: 100px;
+    }
+
+    .text-home{
+        font-size: 20px;
+    }
+
+    .name p{
+        font-size: 28px;
+    }
+
+    .hero .d-flex{
+        flex-direction: column;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 20px;
+    }
+
+    .footer-1{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .certificate-slide .d-flex{
+        flex-direction: column;
+    }
+
+    .wanna-see{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .since{
+        padding-bottom: 10px;
+        text-align: start !important;
+    }
 }
